@@ -1,5 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Vorlage_Praktikum.aux
-The style file: alphadin.bst
-I found no \citation commands---while reading file Vorlage_Praktikum.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Vorlage_Praktikum.aux
+The style file: unsrt.bst
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: kapitel/abstract.aux
+A level-1 auxiliary file: kapitel/geswitches_netz.aux
 Database file #1: literatur.bib
-(There was 1 error message)
+You've used 1 entry,
+            1791 wiz_defined-function locations,
+            453 strings with 3808 characters,
+and the built_in function-call counts, 147 in all, are:
+= -- 10
+> -- 4
+< -- 0
++ -- 2
+- -- 1
+* -- 3
+:= -- 28
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 5
+empty$ -- 19
+format.name$ -- 1
+if$ -- 31
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 1
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 3
+stack$ -- 0
+substring$ -- 0
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 1
+width$ -- 2
+write$ -- 12

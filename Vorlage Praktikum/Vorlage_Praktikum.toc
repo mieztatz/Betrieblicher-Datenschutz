@@ -1,6 +1,14 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Man-in-the-Middle}{4}
-\contentsline {chapter}{\numberline {2}Man-in-the-Middle-Angriffe im geswitchten Netz}{5}
-\contentsline {section}{\numberline {2.1}Test}{5}
-\contentsline {subsection}{\numberline {2.1.1}test}{5}
-\contentsline {subsection}{\numberline {2.1.2}test}{5}
+\select@language {ngerman}
+\contentsline {section}{Aufgabenstellung}{3}{section*.3}
+\contentsline {section}{\numberline {1}Zusammenhang HTTP(s) und Zertifikate}{3}{section.1}
+\contentsline {section}{\numberline {2}Bedeutung einer Man-in-the-Middle Attacke}{4}{section.2}
+\contentsline {section}{\numberline {3}Sicherheitsl\IeC {\"u}cken bei bekannten Computer Herstellern}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Lenovo}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Allgemeiner Ablauf}{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Der Angriff und die ben\IeC {\"o}tigten Mittel}{5}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}DELL}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Schutzm\IeC {\"o}glichkeiten}{7}{section.4}
+\contentsline {section}{\numberline {5}Zwischenfazit}{9}{section.5}
+\contentsline {section}{\numberline {6}Man-in-the-Middle-Angriffe im geswitchten Netz}{10}{section.6}
+\contentsline {section}{Literatur}{11}{section*.4}

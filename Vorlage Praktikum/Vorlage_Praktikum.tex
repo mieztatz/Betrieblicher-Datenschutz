@@ -1,100 +1,68 @@
-\documentclass[10pt, a4paper]{scrreprt}
+\documentclass[12pt, a4paper]{article}
 \usepackage[german,ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes} % deutsche Anführungszeichen
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{bibgerm}	%Unterstützung für bibtex, mehrere Autorennamen mit "and"
 %\usepackage{lmodern}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
-\setcounter{section}{0}
 
-\usepackage{geometry}
-\geometry{verbose,a4paper,tmargin=10mm,bmargin=10mm,lmargin=30mm,rmargin=30mm}
+\usepackage[left=3cm, right=3cm, top=2cm, bottom=2cm, includeheadfoot]{geometry}
+%\usepackage{geometry}
+%\geometry{verbose,a4paper,tmargin=10mm,bmargin=10mm,lmargin=30mm,rmargin=30mm}
 
 %% alle serifenlosen Teile des Dokuments in Helvetica gesetzt
 \usepackage{helvet}
 
+\setcounter{section}{0}
+
 %% Zeilenabstand
 \linespread{1.00}
 
+\bibliographystyle{unsrt}	%zitatangabe
 
 
 %% Schriftformatierung der einzelnen Elemente wie Überschrift usw.
-\setkomafont{chapter}{\sffamily \Large}
-\setkomafont{section}{\sffamily \textit}
-\setkomafont{subsection}{\sffamily \textit}
+%\setkomafont{chapter}{\sffamily \Large}
+%\setkomafont{section}{\sffamily \textit}
+%\setkomafont{subsection}{\sffamily \textit}
 
 
 \begin{document}
 	
-	% Festlegung Art der Zitierung - Havardmethode: Abkuerzung Autor + Jahr
-	\bibliographystyle{alphadin}
+	\include{titlepage}
 	
-	%% Deckplatt generieren
-	\begin{titlepage}
-		\centering
-		{\sffamily\huge Fachbereich 07 Informatik/Mathematik \par}
-		\includegraphics[width=0.5\textwidth]{Hochschule_Muenchen_Logo.png}\par
-		\vspace{1cm}
-		{\sffamily\LARGE Praktikum Datenschutz und Datensicherheit Sommersemester 2016\par}
-		\vspace{1cm}
-		{\sffamily\Large Prof. Dr. Rainer W. Gerling\par}
-		{\sffamily\Large Heidi Schuster\par}
-		\vspace{2cm}
-		{\LARGE Man-in-the-Middle\par}
-		\vspace{1.5cm}
-		{\LARGE Fabian Uhlmann\par}
-		{\LARGE IF6\par}
-		\vspace{0.5cm}
-		{\LARGE Diana Irmscher\par}
-		{\LARGE IF7\par}
-		\vspace{1cm}
-		{\large \today\par}
-		% Ende der Titelseite
-		\vfill
-	\end{titlepage}
+	\include{kapitel/abstract}
+	\newpage
 
-	%% Inhaltsverzeichnis
-	\tableofcontents
-	
-	%% Worum geht es, kurze Erklärung
-	\begin{abstract}
-		Im Rahmen des Studiums Bachelor Informatik absolvieren wir (Fabian Uhlmann und Diana Irmscher) die zusätzliche Ausbildung zum betrieblichen Datenschutz an der Hochschule München.
-		
-		Das Thema Datenschutz und IT-Sicherheit ist in den letzten Jahren immer mehr in den Vordergrund getreten. Meldungen über Angriff wie z.B. auf Bundestag im Mai 2015 und ganz aktuell auch der Krypto-Trojaner Locky sind fast täglich in den Nachrichten vertreten.
-		
-		Wir haben das Thema "'Man-in-the-Middle"' gewählt, weil dieses Thema sehr spannend ausgearbeitet werden kann.
-		Dabei werden wir erst darauf eingehen, wie sich der Angriff zusammensetzt, wo genau die rechtlichen Verstöße liegen und wie man sich vor solche Angriffen schützen kann.
-		
-		Das Thema haben wir aufgeteilt in zwei Unterthemen.
-		Herr Uhlmann wird darauf eingehen, wie man Sicherheit eines Systems mit einem MITM-Angriff sehr effizient aushebeln kann.
-		Frau Irmscher beschäftigt sich mit dem gezielten Angriff in TLS/SSL und in gesnifften Netzwerken.
-		\flushright{München, \today}
-		 
-	\end{abstract}
+	\tableofcontents		%Macht das Inhaltsverzeichnis
+	\newpage
 	
 	%% Fabian
-	\chapter{Man-in-the-Middle}
-	Dell und Lenovo haben demonstriert, dass man mit Man-in-the-Middle
-	Angriffen die Sicherheit eines Systems sehr effizient aushebeln kann.
-	Wie funktioniert ein derartiger Angriff und was kann man tun, um sich
-	zu schützen.
-	\section{}
-	\subsection{} 
-	\subsection{} 
+	\input{kapitel/aufgabenstellung}
+	\input{kapitel/1_http}
+	\input{kapitel/2_bedeutung}
+	\input{kapitel/3_sicherheitsluecke}
+	\input{kapitel/4_schutz}
+	\input{kapitel/5_zwischenfazit}
+
+	\newpage
 	
 	%% Diana
-	\chapter{Man-in-the-Middle-Angriffe im geswitchten Netz}
-	Es gibt Man-in-the-Middle-Angriffe nicht nur gegen SSL/TLS
-	Verbindungen sondern auch gegen "normale" Netzwerkverbindungen.
-	Sie werden von Angreifern eingesetzt, um in einem geswitchten Netz
-	zu sniffen.
-	\section{Test}
-	\subsection{test} 
-	\subsection{test} 
+	\input{kapitel/geswitches_netz}
+	
+
 
 	%% Was so alles in einen Anhang kommt
-	\appendix
+	%\appendix
 	
+	\newpage
+	\phantomsection
+	\addcontentsline{toc}{section}{Literatur}
 	\bibliography{literatur}
+	
 	
 	
 \end{document}
