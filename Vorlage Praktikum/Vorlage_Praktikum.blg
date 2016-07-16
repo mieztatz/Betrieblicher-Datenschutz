@@ -4,46 +4,45 @@ The top-level auxiliary file: Vorlage_Praktikum.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: kapitel/abstract.aux
-A level-1 auxiliary file: kapitel/geswitches_netz.aux
 Database file #1: literatur.bib
-You've used 1 entry,
+You've used 4 entries,
             1791 wiz_defined-function locations,
-            453 strings with 3808 characters,
-and the built_in function-call counts, 147 in all, are:
-= -- 10
-> -- 4
-< -- 0
-+ -- 2
-- -- 1
-* -- 3
-:= -- 28
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
+            471 strings with 4778 characters,
+and the built_in function-call counts, 528 in all, are:
+= -- 42
+> -- 17
+< -- 1
++ -- 8
+- -- 4
+* -- 12
+:= -- 85
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 5
-empty$ -- 19
-format.name$ -- 1
-if$ -- 31
+cite$ -- 4
+duplicate$ -- 22
+empty$ -- 67
+format.name$ -- 4
+if$ -- 120
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 4
 missing$ -- 0
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 7
+newline$ -- 23
+num.names$ -- 3
+pop$ -- 24
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3
+skip$ -- 12
 stack$ -- 0
 substring$ -- 0
-swap$ -- 1
-text.length$ -- 0
+swap$ -- 4
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 12
+while$ -- 3
+width$ -- 5
+write$ -- 42

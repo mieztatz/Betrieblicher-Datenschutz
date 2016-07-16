@@ -1,10 +1,37 @@
 \begin{thebibliography}{1}
 
+\bibitem{osi}
+{TELECOMMUNICATION STANDARDIZATION SECTOR OF INTERNATIONAL TELECOMMUNICATION
+  UNION (ITU-T)}.
+\newblock \newline {X.200 : Information technology - Open Systems
+  Interconnection - Basic Reference Model: The basic model}, \newline 01. Juli
+  1994.
+\newblock \newline \url{http://www.itu.int/rec/T-REC-X.200-199407-I}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{mitm-bild}
+{Bild durch Fabian Uhlmann aus Bildern von nachfolgend aufgeführten URLs
+  zusammengestellt.}
+\newblock \newline
+  \url{http://ecx.images-amazon.com/images/I/81LcrgMpIcL._SL1500_.jpg},
+  \newline
+  \url{http://i5.walmartimages.com/dfw/dce07b8c-6381/k2-_aa74fc49-072f-4d83-afdc-4164105621f2.v1.jpg},
+  \newline
+  \url{https://gigaom.com/wp-content/uploads/sites/1/2013/07/hacker-cyber-attack-640x522.jpg}
+  \newline (Abrufdatum: 15.07.2016).
+
+\bibitem{RFC7230}
+R.~Fielding and J.~Reschke.
+\newblock \newline {Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and
+  Routing}.
+\newblock RFC 7230, RFC Editor, \newline {June} {2014}.
+\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc7230.txt}.
+
 \bibitem{pc_hersteller}
 {STAMFORD, Conn.}
-\newblock {Gartner Says Worldwide PC Shipments Declined 9.6 Percent in First
-  Quarter of 2016}, 11. April 2016.
-\newblock \url{http://www.gartner.com/newsroom/id/3280626} \newline Abrufdatum:
-  15.07.2016.
+\newblock \newline {Gartner Says Worldwide PC Shipments Declined 9.6 Percent in
+  First Quarter of 2016}, \newline 11. April 2016.
+\newblock \newline \url{http://www.gartner.com/newsroom/id/3280626}
+  (Abrufdatum: 15.07.2016).
 
 \end{thebibliography}
