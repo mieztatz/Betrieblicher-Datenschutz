@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.15)  16 JUL 2016 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.15)  17 JUL 2016 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,25 +764,29 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 
-<images/MITM.png, id=88, 832.0686pt x 416.757pt>
+<images/MITM.png, id=89, 832.0686pt x 416.757pt>
 File: images/MITM.png Graphic file (type png)
  <use images/MITM.png>
 Package pdftex.def Info: images/MITM.png used on input line 5.
-(pdftex.def)             Requested size: 426.79135pt x 213.76422pt.
+(pdftex.def)             Requested size: 341.43437pt x 171.01137pt.
 )
 (./kapitel/2_http.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
 
-<images/firefox_installierte_zertifikate.png, id=91, 1003.75pt x 528.97626pt>
-File: images/firefox_installierte_zertifikate.png Graphic file (type png)
+<images/Zertifizierungsstellen.png, id=96, 834.11626pt x 722.7pt>
+File: images/Zertifizierungsstellen.png Graphic file (type png)
 
-<use images/firefox_installierte_zertifikate.png>
-Package pdftex.def Info: images/firefox_installierte_zertifikate.png used on in
-put line 9.
-(pdftex.def)             Requested size: 426.79135pt x 224.9209pt.
+<use images/Zertifizierungsstellen.png>
+Package pdftex.def Info: images/Zertifizierungsstellen.png used on input line 9
+.
+(pdftex.def)             Requested size: 213.39568pt x 184.88705pt.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
@@ -791,22 +795,42 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 11.
- [3 <./images/MITM.png>])
+ [3 <./images/MITM.png>]
+<images/untrusted_ca.png, id=107, 953.5625pt x 694.595pt>
+File: images/untrusted_ca.png Graphic file (type png)
+
+<use images/untrusted_ca.png>
+Package pdftex.def Info: images/untrusted_ca.png used on input line 19.
+(pdftex.def)             Requested size: 208.0588pt x 151.55013pt.
+
+<images/ausnahmeregel.png, id=108, 503.8825pt x 512.91624pt>
+File: images/ausnahmeregel.png Graphic file (type png)
+
+<use images/ausnahmeregel.png>
+Package pdftex.def Info: images/ausnahmeregel.png used on input line 25.
+(pdftex.def)             Requested size: 149.37958pt x 152.05249pt.
+
+<images/trusted_ca.png, id=109, 856.19875pt x 435.6275pt>
+File: images/trusted_ca.png Graphic file (type png)
+
+<use images/trusted_ca.png>
+Package pdftex.def Info: images/trusted_ca.png used on input line 34.
+(pdftex.def)             Requested size: 213.39568pt x 108.57425pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 36.
+ [4 <./images/Zertifizierungsstellen.png>])
 (./kapitel/3_sicherheitsluecke.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [4 <./images/firefox_installierte_zertifikate.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
@@ -814,6 +838,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 9.
+ [5 <./images/untrusted_ca.png> <./images/ausnahmeregel.png> <./images/trusted_
+ca.png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining ngerman shorthand "~
@@ -826,7 +860,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
- [5]
+ [6]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining ngerman shorthand "~
@@ -837,6 +871,18 @@ Overfull \hbox (23.9291pt too wide) in paragraph at lines 18--1
 -liert. Bei dem US-amerikanischen
  []
 
+
+Overfull \hbox (2.71896pt too wide) in paragraph at lines 18--1
+\T1/cmr/m/n/12 DSD-Test-Pro-vi-der Zer-ti-fi-kat wur-den, ge-nau wie das Superf
+ish-Zertifikat, im Windows-
+ []
+
+
+Overfull \hbox (11.69046pt too wide) in paragraph at lines 18--1
+\T1/cmr/m/n/12 Zertifikatsspeicher ab-ge-legt. Beim Auf-ruf der all-ge-mei-nen 
+Ei-gen-schaf-ten des eDellRoot-
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -845,21 +891,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-[6]
+[7]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 ) (./kapitel/5_zwischenfazit.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
- [7]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -877,7 +914,16 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-))
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+ [9])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
@@ -886,7 +932,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
- [9]
+ [10]
 (./kapitel/geswitches_netz.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -901,21 +947,59 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
- [10]
+ [11]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 63.
  (./Vorlage_Praktikum.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 13--22
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+[]$\T1/cmtt/m/n/12 http : / / www . itu . int / rec / T-[]REC-[]X . 200-[]19940
+7-[]I$[] \T1/cmr/m/n/12 (Ab-ruf-da-tum:
+ []
+
+
+Overfull \hbox (2.13388pt too wide) in paragraph at lines 13--19
+[]$\T1/cmtt/m/n/12 https : / / blog . kaspersky . de / was-[]ist-[]eine-[]man-[
+]in-[]the-[]middle-[]attacke /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--30
 []$\T1/cmtt/m/n/12 http : / / i5 . walmartimages . com / dfw / dce07b8c-[]6381 
 / k2-[] _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--22
+Underfull \hbox (badness 10000) in paragraph at lines 21--30
 []$\T1/cmtt/m/n/12 https : / / gigaom . com / wp-[]content / uploads / sites / 
 1 / 2013 / 07 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--60
+[]$\T1/cmtt/m/n/12 https : / / www . itu . int / rec / T-[]REC-[]X . 509-[]2012
+10-[]I / en$[] \T1/cmr/m/n/12 (Ab-ruf-da-tum:
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 67.
+[12]
+Overfull \hbox (175.49167pt too wide) in paragraph at lines 69--75
+[]$\T1/cmtt/m/n/12 http : / / www . golem . de / news / adware-[]lenovo-[]lapto
+ps-[]durch-[]superfish-[]adware-[]angreifbar-[]1502-[]112460 .
+ []
+
+
+Overfull \hbox (11.98087pt too wide) in paragraph at lines 77--83
+[]$\T1/cmtt/m/n/12 http : / / blog . erratasec . com / 2015 / 02 / extracting-[
+]superfish-[]certificate .
  []
 
 )
@@ -928,7 +1012,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
- [11]
+ [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./Vorlage_Praktikum.aux (./titlepage.aux) (./kapitel/abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
@@ -937,25 +1021,28 @@ Package rerunfilecheck Info: File `Vorlage_Praktikum.out' has not changed.
 (rerunfilecheck)             Checksum: 3B83A67AAF547AFAB104A9B8A29FB4B2;809.
  ) 
 Here is how much of TeX's memory you used:
- 7676 strings out of 494860
- 110154 string characters out of 6177602
- 226559 words of memory out of 5000000
- 10808 multiletter control sequences out of 15000+600000
- 22495 words of font info for 38 fonts, out of 8000000 for 9000
+ 7719 strings out of 494860
+ 110775 string characters out of 6177602
+ 224769 words of memory out of 5000000
+ 10832 multiletter control sequences out of 15000+600000
+ 24790 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 29i,6n,32p,2231b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,32p,2266b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
 fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/fabian/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/fabian/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/fabian/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx1728.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm1440.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-2074.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Vorlage_Praktikum.pdf (12 pages, 754905 bytes).
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/fabian/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/fabian/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm0800.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1200.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
+1200.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk
+> </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/f
+abian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>{/usr/share/texlive
+/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb>
+Output written on Vorlage_Praktikum.pdf (14 pages, 877096 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

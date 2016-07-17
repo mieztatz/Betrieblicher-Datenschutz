@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{osi}
 {TELECOMMUNICATION STANDARDIZATION SECTOR OF INTERNATIONAL TELECOMMUNICATION
@@ -7,6 +7,14 @@
   Interconnection - Basic Reference Model: The basic model}, \newline 01. Juli
   1994.
 \newblock \newline \url{http://www.itu.int/rec/T-REC-X.200-199407-I}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{mitm-def}
+{Serge Malenkovich}.
+\newblock \newline {Was ist eine Man-in-the-Middle-Attacke?}, \newline 10.
+  April 2013.
+\newblock \newline
+  \url{https://blog.kaspersky.de/was-ist-eine-man-in-the-middle-attacke/905/}
   (Abrufdatum: 15.07.2016).
 
 \bibitem{mitm-bild}
@@ -24,14 +32,62 @@
 R.~Fielding and J.~Reschke.
 \newblock \newline {Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and
   Routing}.
-\newblock RFC 7230, RFC Editor, \newline {June} {2014}.
-\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc7230.txt}.
+\newblock RFC 7230, RFC Editor, \newline {Juni} {2014}.
+\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc7230.txt} (Abrufdatum:
+  15.07.2016).
+
+\bibitem{RFC6101}
+A.~Freier, P.~Karlton, and P.~Kocher.
+\newblock \newline {The Secure Sockets Layer (SSL) Protocol Version 3.0}.
+\newblock RFC 6101, RFC Editor, \newline {August} {2011}.
+\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc6101.txt}.
+
+\bibitem{RFC2818}
+E.~Rescorla.
+\newblock \newline {HTTP Over TLS}.
+\newblock RFC 2818, RFC Editor, \newline {Mai} {2000}.
+\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc2818.txt} (Abrufdatum:
+  15.07.2016).
+
+\bibitem{x.509}
+{TELECOMMUNICATION STANDARDIZATION SECTOR OF INTERNATIONAL TELECOMMUNICATION
+  UNION (ITU-T)}.
+\newblock \newline {X.509 : Information technology - Open Systems
+  Interconnection - The Directory: Public-key and attribute certificate
+  frameworks}, \newline 14. Oktober 2012.
+\newblock \newline \url{https://www.itu.int/rec/T-REC-X.509-201210-I/en}
+  (Abrufdatum: 15.07.2016).
 
 \bibitem{pc_hersteller}
 {STAMFORD, Conn.}
 \newblock \newline {Gartner Says Worldwide PC Shipments Declined 9.6 Percent in
   First Quarter of 2016}, \newline 11. April 2016.
 \newblock \newline \url{http://www.gartner.com/newsroom/id/3280626}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{superfish}
+{Hanno Böck}.
+\newblock \newline {Lenovo-Laptops durch Superfish-Adware angreifbar}, \newline
+  19. Februar 2015.
+\newblock \newline
+  \url{http://www.golem.de/news/adware-lenovo-laptops-durch-superfish-adware-angreifbar-1502-112460.html}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{certificate_ex}
+{Robert Graham}.
+\newblock \newline {Extracting the SuperFish certificate }, \newline 19.
+  Februar 2015.
+\newblock \newline
+  \url{http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html#.V4uWdu22Hfa}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{dell}
+{DELL}.
+\newblock \newline {Informationen zu den Zertifikaten eDellRoot und
+  DSDTestProvider und Anweisungen zum Entfernen dieser Zertifikate von Ihrem
+  Dell PC}, \newline letzte Modifizierung 20 Juni 2016.
+\newblock \newline
+  \url{http://www.dell.com/support/article/us/en/19/SLN300321/DE} \newline
   (Abrufdatum: 15.07.2016).
 
 \end{thebibliography}
