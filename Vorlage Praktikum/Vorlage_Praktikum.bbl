@@ -6,7 +6,7 @@
 \newblock \newline {X.200 : Information technology - Open Systems
   Interconnection - Basic Reference Model: The basic model}, \newline 01. Juli
   1994.
-\newblock \newline \url{http://www.itu.int/rec/T-REC-X.200-199407-I}
+\newblock \newline \url{http://www.itu.int/rec/T-REC-X.200-199407-I} \newline
   (Abrufdatum: 15.07.2016).
 
 \bibitem{mitm-def}
@@ -40,7 +40,8 @@ R.~Fielding and J.~Reschke.
 A.~Freier, P.~Karlton, and P.~Kocher.
 \newblock \newline {The Secure Sockets Layer (SSL) Protocol Version 3.0}.
 \newblock RFC 6101, RFC Editor, \newline {August} {2011}.
-\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc6101.txt}.
+\newblock \newline \url{http://www.rfc-editor.org/rfc/rfc6101.txt} (Abrufdatum:
+  15.07.2016).
 
 \bibitem{RFC2818}
 E.~Rescorla.
@@ -56,7 +57,7 @@ E.~Rescorla.
   Interconnection - The Directory: Public-key and attribute certificate
   frameworks}, \newline 14. Oktober 2012.
 \newblock \newline \url{https://www.itu.int/rec/T-REC-X.509-201210-I/en}
-  (Abrufdatum: 15.07.2016).
+  \newline (Abrufdatum: 15.07.2016).
 
 \bibitem{pc_hersteller}
 {STAMFORD, Conn.}
@@ -73,12 +74,48 @@ E.~Rescorla.
   \url{http://www.golem.de/news/adware-lenovo-laptops-durch-superfish-adware-angreifbar-1502-112460.html}
   (Abrufdatum: 15.07.2016).
 
+\bibitem{superfish-bild}
+{Screenshot by Robert Graham}.
+\newblock \newline
+  \url{http://www.cnet.com/how-to/lenovo-superfish-adware-uninstall-fix/}
+  \newline (Abrufdatum: 15.07.2016).
+
+\bibitem{lenovo}
+{Marc Rogers}.
+\newblock \newline {Lenovo installs adware on customer laptops and compromises
+  ALL SSL}, \newline 19. Februar 2015.
+\newblock \newline
+  \url{http://marcrogers.org/2015/02/19/lenovo-installs-adware-on-customer-laptops-and-compromises-all-ssl/}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{sha-1}
+{Jürgen Schmidt}.
+\newblock {Kryptoverfahren SHA-1 geknackt}, 16. Februar 2005.
+\newblock \newline
+  \url{http://www.heise.de/newsticker/meldung/Kryptoverfahren-SHA-1-geknackt-135372.html}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{rsa}
+Andrea Pellegrini, Valeria Bertacco, and Todd Austin.
+\newblock {Fault-Based Attack of RSA Authentication}, 2010.
+\newblock \newline
+  \url{http://web.eecs.umich.edu/~valeria/research/publications/DATE10RSA.pdf}
+  (Abrufdatum: 15.07.2016).
+
 \bibitem{certificate_ex}
 {Robert Graham}.
-\newblock \newline {Extracting the SuperFish certificate }, \newline 19.
-  Februar 2015.
+\newblock \newline {Extracting the SuperFish certificate}, \newline 19. Februar
+  2015.
 \newblock \newline
   \url{http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html#.V4uWdu22Hfa}
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{dell_joe_nord}
+{Joe Nord}.
+\newblock \newline {New Dell computer comes with a eDellRoot trusted root
+  certificate}, \newline 22. November 2015.
+\newblock \newline
+  \url{http://joenord.blogspot.de/2015/11/new-dell-computer-comes-with-edellroot.html}
   (Abrufdatum: 15.07.2016).
 
 \bibitem{dell}
@@ -88,6 +125,14 @@ E.~Rescorla.
   Dell PC}, \newline letzte Modifizierung 20 Juni 2016.
 \newblock \newline
   \url{http://www.dell.com/support/article/us/en/19/SLN300321/DE} \newline
+  (Abrufdatum: 15.07.2016).
+
+\bibitem{zdnet}
+{Liam Tung}.
+\newblock \newline {How to remove Dell's 'Superfish 2.0' root certificate -
+  permanently}, \newline 24. November 2015.
+\newblock \newline
+  \url{http://www.zdnet.com/article/how-to-remove-dells-superfish-2-0-root-certificate-permanently/}
   (Abrufdatum: 15.07.2016).
 
 \end{thebibliography}

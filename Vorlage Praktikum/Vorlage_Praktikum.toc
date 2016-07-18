@@ -7,8 +7,8 @@
 \contentsline {subsection}{\numberline {3.1}Lenovo}{6}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Allgemeiner Ablauf}{6}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Der Angriff und die ben\IeC {\"o}tigten Mittel}{6}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}DELL}{7}{subsection.3.2}
-\contentsline {section}{\numberline {4}Schutzm\IeC {\"o}glichkeiten}{8}{section.4}
-\contentsline {section}{\numberline {5}Zwischenfazit}{9}{section.5}
-\contentsline {section}{\numberline {6}Man-in-the-Middle-Angriffe im geswitchten Netz}{11}{section.6}
-\contentsline {section}{Literatur}{12}{section*.4}
+\contentsline {subsection}{\numberline {3.2}DELL}{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}Schutzm\IeC {\"o}glichkeiten}{10}{section.4}
+\contentsline {section}{\numberline {5}Zwischenfazit}{12}{section.5}
+\contentsline {section}{\numberline {6}Man-in-the-Middle-Angriffe im geswitchten Netz}{13}{section.6}
+\contentsline {section}{Literatur}{14}{section*.4}
