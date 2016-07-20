@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.15)  18 JUL 2016 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.15)  20 JUL 2016 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,15 +947,20 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--50
+
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
- [11])
+(babel)             in language  on input line 50.
+[11]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
@@ -978,8 +983,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
-
-[13]
+ [13]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1097,9 +1101,9 @@ en/ec/ecbx1200.600pk> </home/fabian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
 abian/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>{/usr/share/texlive
 /texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on Vorlage_Praktikum.pdf (17 pages, 1601153 bytes).
+Output written on Vorlage_Praktikum.pdf (17 pages, 1600758 bytes).
 PDF statistics:
- 614 PDF objects out of 1000 (max. 8388607)
+ 613 PDF objects out of 1000 (max. 8388607)
  260 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
