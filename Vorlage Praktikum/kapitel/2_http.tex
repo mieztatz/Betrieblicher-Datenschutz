@@ -1,4 +1,4 @@
-\section{Zusammenhang HTTP(s) und Zertifikate}
+\subsection{Zusammenhang HTTP(s) und Zertifikate}
 \label{sec:HTTPs}
 Typischerweise fragt ein Nutzer über seinen PC (Client) eine Internetseite über das unsichere Hypertext Transfer Protocol (HTTP) an. Dabei werden alle über den Aufrufer benötigten Informationen, wie z. B. Benutzername und Passwort, im Klartext an den Webserver übermittelt. Auch die Rückantwort vom Server zum Client wird ebenfalls unverschlüsselt übertragen. Für einen sicheren Datenaustausch sollte ein Anwender, falls dies angeboten wird, die Internetseite per Hypertext Transfer Protocol Secure (HTTPs) aufrufen. \cite[vgl.]{RFC7230} 
 
@@ -7,16 +7,17 @@ Dieses enthält unter anderem den öffentlichen Schlüssel (Public Key), einen e
 Wenn das Zertifikat von einer Zertifizierungsstelle (Certification Authority = CA) ausgestellt wurde, deren eigenes Zertifikat (= Root-Zertifikat oder Wurzelzertifikat) bereits im Browser installiert ist, dann wird dem ausgestellten Zertifikat automatisch vertraut. In den bekanntesten Webbrowsern wie z. B. Firefox, Chrome oder dem Internet Explorer sind bereits viele Root-Zertifikate von weltweit verschiedenen Zertifizierungsstellen vorinstalliert.
 \begin{figure}[H]
 		\centering
-		\includegraphics[width=0.5\linewidth]{images/Zertifizierungsstellen.png}
+		\includegraphics[width=0.65\linewidth]{images/Zertifizierungsstellen.png}
 		\caption{Ausschnitt vorinstallierter Zertifizierungsstellen und deren ausgestellten Zertifikate im Firefox Browser}
 \end{figure}
-Nutzt der Webservers ein selbst ausgestelltes (selbst signiertes) Zertifikat zur Authentifizierung, dann wird beim Verbindungsaufbau dem Nutzer eine Warnung angezeigt. Der Nutzer kann anschließend selbst entscheiden ob er dem Zertifikat vertraut oder nicht. Außerdem entscheidet er über Dauerhaftigkeit des Vertrauens. Er hat die Auswahl zwischen \textit{nur einmalig}, d. h. nur für diese gerade offene Verbindungssession, oder \textit{für immer}. 
+
+Verwendet der Webserver ein selbst ausgestelltes (selbst signiertes) Zertifikat zur Authentifizierung, dann wird beim Verbindungsaufbau dem Nutzer eine Warnung angezeigt. Er kann anschließend selbst entscheiden ob er dem Zertifikat vertraut oder nicht. Außerdem entscheidet er über die Dauerhaftigkeit des Vertrauens. Dabei muss er sich zwischen der Möglichkeit \textit{nur einmalig}, d. h. nur für diese gerade offene Verbindungssession, oder \textit{für immer} entscheiden. 
 
 \begin{figure}[htb]
 	\centering
 	\begin{minipage}[t]{0.65\linewidth}
 	%	\centering
-		\includegraphics[width=.75\linewidth]{images/untrusted_ca.png}
+		\includegraphics[width=0.75\linewidth]{images/untrusted_ca.png}
 		\caption{Warnung bei unbekanntem / \newline nicht vertrauenswürdigem Zertifikat}
 	\end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
 	\hfill
@@ -30,6 +31,6 @@ Nutzt der Webservers ein selbst ausgestelltes (selbst signiertes) Zertifikat zur
 Ist letzteres der Fall, dann wird das Zertifikat fest im Browser installiert. Es wird dann bei den schon vorinstallierten Zertifikaten mit abgelegt. Diese dauerhafte Ausnahme hat zu Folge, dass der Benutzer beim Verbindungsaufbau zu der zugehörigen Webseite vom Webbrowser nicht mehr gewarnt wird. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\linewidth]{images/trusted_ca.png}
+	\includegraphics[width=.7\linewidth]{images/trusted_ca.png}
 	\caption{Keine Warnung nach dauerhafter Ausnahme / fester Installation des Zertifikats im Browser}
 \end{figure}
