@@ -1,0 +1,58 @@
+\section*{Anhang}
+\subsection*{Liste aller Werkzeuge in dsniff mit Erklärung}
+\begin{itemize}
+	\item mitsniffen des gesamten Netzverkehrs
+	\begin{enumerate}
+	\item \textbf{dsniff}: 
+	\begin{quote}
+		\glqq is a password sniffer which handles FTP, Telnet, SMTP, HTTP, POP, poppass, NNTP, IMAP, SNMP, LDAP, Rlogin, RIP, OSPF, PPTP MS-CHAP, NFS, VRRP, YP/NIS, SOCKS, X11, CVS, IRC, AIM, ICQ, Napster, PostgreSQL, Meeting Maker, Citrix ICA, Symantec pcAnywhere, NAI Sniffer, Microsoft SMB, Oracle SQL*Net, Sybase and Microsoft SQL protocols.\grqq\cite{dsniff}
+	\end{quote}
+	\item \textbf{filesnarf}: 
+	\begin{quote}
+		\glqq saves files sniffed from NFS traffic in the current working directory.\grqq\cite{filesnarf}
+	\end{quote}
+	\item \textbf{mailsnarf}: 
+	\begin{quote}
+		\glqq outputs e-mail messages sniffed from SMTP and POP traffic in Berkeley mbox format, suitable for offline browsing with your favorite mail reader.\grqq\cite{mailsnarf}
+	\end{quote}
+	\item \textbf{msgsnarf}: 
+	\begin{quote}
+		\glqq records selected messages from AOL Instant Messenger, ICQ 2000, IRC, MSN Messenger, or Yahoo Messenger chat sessions.\grqq\cite{msgsnarf}
+	\end{quote}
+	\item \textbf{urlsnarf}: 
+	\begin{quote}
+		\glqq outputs all requested URLs sniffed from HTTP traffic in CLF (Common Log Format, used by almost all web servers), suitable for offline post-processing with your favorite web log analysis tool (analog, wwwstat, etc.).\grqq\cite{urlsnarf}
+	\end{quote}
+	\item \textbf{webspy}: 
+	\begin{quote}
+		\glqq sends URLs sniffed from a client to your local Netscape browser for display, updated in real-time (as the target surfs, your browser surfs along with them, automagically). Netscape must be running on your local X display ahead of time.\grqq\cite{webspy}
+	\end{quote}
+	\end{enumerate}
+	\item Manipulation im Netzverkehr
+	\begin{enumerate}
+	\item \textbf{arpspoof}: 
+	\begin{quote}
+		\glqq redirects packets from a target host (or all hosts) on the LAN intended for another host on the LAN by forging ARP replies. This is an extremely effective way of sniffing traffic on a switch.\grqq\cite{arpspoof}.
+	\end{quote}
+	\item \textbf{dnsspoof}: 
+	\begin{quote}
+		\glqq forges replies to arbitrary DNS address / pointer queries on the LAN. This is useful in bypassing hostname-based access controls, or in implementing a variety of man-in-the-middle attacks. \grqq\cite{dnsspoof}.
+	\end{quote}
+	\item \textbf{macof}: 
+	\begin{quote}
+		\glqq floods the local network with random MAC addresses (causing some switches to fail open in repeating mode, facilitating sniffing).\grqq\cite{macof}
+	\end{quote}
+	\end{enumerate}
+	\item Man-in-the-middle-Attake in SSH/TLS-Verbindungen
+	\begin{enumerate}
+	\item \textbf{sshmitm}: 
+	\begin{quote} 
+		\glqq proxies and sniffs SSH traffic redirected by dnsspoof(8), capturing SSH password logins, and optionally hijacking interactive sessions. Only SSH protocol version 1 is (or ever will be) supported - this program is far too evil already.\grqq\cite{sshmitm}
+	\end{quote}
+	\item \textbf{webmitm}: 
+	\begin{quote}
+		\glqq transparently proxies and sniffs HTTP / HTTPS traffic redirected by dnsspoof(8), capturing most "secure" SSL-encrypted webmail logins and form submissions.\grqq\cite{webmitm}
+	\end{quote}
+	\end{enumerate}
+	
+\end{itemize}

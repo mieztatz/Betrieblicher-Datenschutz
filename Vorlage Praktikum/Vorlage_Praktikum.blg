@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Vorlage_Praktikum.aux
+The style file: unsrt.bst
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: kapitel/abstract.aux
+Database file #1: literatur.bib
+Warning--empty institution in RFC2459
+You've used 39 entries,
+            1791 wiz_defined-function locations,
+            616 strings with 10090 characters,
+and the built_in function-call counts, 4568 in all, are:
+= -- 346
+> -- 127
+< -- 4
++ -- 67
+- -- 28
+* -- 62
+:= -- 592
+add.period$ -- 100
+call.type$ -- 39
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 203
+empty$ -- 679
+format.name$ -- 28
+if$ -- 1108
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 0
+newline$ -- 181
+num.names$ -- 20
+pop$ -- 289
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 131
+stack$ -- 0
+substring$ -- 0
+swap$ -- 39
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 20
+width$ -- 41
+write$ -- 341
+(There was 1 warning)

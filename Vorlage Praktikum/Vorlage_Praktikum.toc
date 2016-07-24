@@ -1,0 +1,27 @@
+\select@language {ngerman}
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Man in the Middle im Web}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Aufgabenstellung}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Bedeutung einer Man-in-the-Middle Attacke}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Zusammenhang HTTP(s) und Zertifikate}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Sicherheitsl\IeC {\"u}cken bei bekannten Computer Herstellern}{6}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Lenovo mit potentiellem Risiko}{6}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}DELL mit \IeC {\"a}hnlichen Fehlern}{7}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Schutzm\IeC {\"o}glichkeiten}{10}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Zwischenfazit}{12}{subsection.1.6}
+\contentsline {section}{\numberline {2}Man-in-the-Middle-Angriffe im geswitchten Netz}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}Switch vs. Hub}{13}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Hub}{13}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Switch}{13}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Funktion der Switch-Tabelle}{14}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Was passiert, wenn die Switch-Tabelle \IeC {\"u}berl\IeC {\"a}uft}{16}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Was ist ein geswitchtes Netz?}{16}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Mehrere Switches in einem Netzwerk}{17}{subsubsection.2.2.1}
+\contentsline {subsection}{\numberline {2.3}Angriffsm\IeC {\"o}glichkeiten in einem geswitchten Netzwerk}{17}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}MAC-Flooding}{17}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}MAC-Spoofing}{17}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}ARP-Spoofing}{17}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Theoretisches Beispiel eines Angriffs mit ARP-Spoofing}{18}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Werkzeug zur Umsetzung eines ARP-Spoofing-Angriffs}{20}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Schutzma\IeC {\ss }nahmen und Kontrolle im Netzwerke}{21}{subsection.2.6}
+\contentsline {section}{Literatur}{24}{section*.6}
