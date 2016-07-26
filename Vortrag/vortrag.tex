@@ -1,0 +1,91 @@
+\documentclass{beamer}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{eurosym}
+
+\mode<presentation>{
+	\definecolor{LogoRed}{RGB}{219,00,31}
+	\definecolor{LogoGray}{RGB}{86,86,80}
+	
+	\useoutertheme[width=2.1cm]{sidebar}
+	\useinnertheme{rounded}
+	\setbeamercolor{normal text}{fg=black,bg=white}
+	\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+	\setbeamercolor{title}{fg=LogoRed}
+	\setbeamercolor{frametitle}{fg=LogoRed}
+	\setbeamercolor{structure}{fg=LogoRed}
+	\setbeamercolor{section in sidebar}{fg=LogoRed}
+	\setbeamercolor{subsection in sidebar}{fg=LogoRed}
+	
+	\usefoottemplate{\vbox{\tinycolouredline{LogoGray!25}{\hspace{4pt}\hspace{15pt}\insertdate\hfill\insertshortinstitute\hfill \insertframenumber{}/\inserttotalframenumber}}}
+	
+	\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection\par}
+	\setbeamertemplate{subsection in toc}{\hspace*{2em}\inserttocsectionnumber.\inserttocsubsectionnumber~\inserttocsubsection}
+	\AtBeginSubsection[] {
+		\begin{frame}<beamer>
+			\frametitle{Outline}
+			\tableofcontents[currentsection,sectionstyle=show/show,subsectionstyle=show/shaded/hide]
+		\end{frame}
+	}
+}
+
+\title{Man-in-the-Middle-Angriffe}
+\subtitle{Praktikum Datenschutz und Datensicherheit \\ Sommersemester 2016}
+\author{Fabian Uhlmann
+\and {Diana Irmscher}}
+\institute{Fakultät für Informatik und Mathematik
+\and{Hochschule für angewandte Wissenschaften München}}
+\logo{\includegraphics[height=1.0cm]{logo_hm.png}}
+\date{\today}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+	\maketitle
+	
+	\section{Begrüßung}
+	
+	\begin{frame} %% Die Vortragenden stellen sich vor
+		\frametitle{Vorstellung}
+		\begin{columns}
+			\column{.47\textwidth}
+			\includegraphics[width=0.7\textwidth]{uhlmann.jpg}\\
+			\textbf{Fabian Uhlmann}
+			\\
+			Informatik, Bachelor
+			\column{.47\textwidth}
+			\includegraphics[width=0.725\textwidth]{irmscher.png}\\
+			\textbf{Diana Irmscher}
+			\\
+			Informatik, Bachelor
+		\end{columns}
+		
+		
+		
+
+	\end{frame}
+	
+	\begin{frame} %% Agenda zeigen, was noch ansteht
+		\frametitle{Agenda}
+		\tableofcontents
+	\end{frame}
+	
+	\section{Man in the Middle im Web}
+	
+	\begin{frame} %% Der Dekan wird vorgestellt
+		\frametitle{Aufgabenstellung}
+	
+    \end{frame}
+    
+    \section{Man-in-the-Middle-Angriffe im geswitchten Netzwerk}
+    	
+    	\begin{frame} %% Der Dekan wird vorgestellt
+    		\frametitle{Aufgabenstellung}
+    	
+        \end{frame}
+    
+    
+    
+\end{document}
