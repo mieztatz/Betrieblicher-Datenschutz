@@ -4,6 +4,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{eurosym}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{subfig}
 
 \mode<presentation>{
 	\definecolor{LogoRed}{RGB}{219,00,31}
@@ -84,22 +87,180 @@
 	     \subsection*{Einführung}
 	     \begin{frame}
 	     	\frametitle{Man in the Middle (MITM)}
-	     	\begin{minipage}[t]{0.8\linewidth}
-	     		%	\centering
-	     		\includegraphics[width=0.8\linewidth]{images_fabian/mitm.jpg}
-	     		\newline Quelle: [1]
-	     	\end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
-	     	\hfill
-	     	\begin{minipage}[t]{0.7\linewidth}
-	     	%	\centering
-	     		\includegraphics[width=0.8\linewidth]{images_fabian/mitm2.jpg}
-	     		\newline Quelle: [2]
-	     	\end{minipage}
+	     	
+	     	\begin{tikzpicture}[remember picture, overlay]
+		     	\node at (current page.north west){
+	     		\begin{tikzpicture}[overlay]
+	     		\node[draw=none,anchor=west] at (40mm,-40mm) {\includegraphics[scale=0.5]{images_fabian/mitm2.jpg} \begin{tiny} Quelle: {[2]} \end{tiny}};
+	     		\node[draw=none,anchor=west] at (25mm,-75mm) {\includegraphics[scale=0.3]{images_fabian/mitm.jpg} \begin{tiny} Quelle: {[1]} \end{tiny}};
+		     	\end{tikzpicture}};
+		     \end{tikzpicture}
 	     \end{frame}
+	     
 	     \begin{frame}
 	     	\frametitle{HTTP(s) und Zertifikate}
-	     	
+	     	\begin{tikzpicture}[remember picture, overlay]
+	     	\node at (current page.north west){
+	     		\begin{tikzpicture}[overlay]
+	     		\node[draw=none,anchor=west] at (30mm,-30mm) {\includegraphics[scale=0.5]{images_fabian/http_https.png} \begin{tiny} Quelle: {[3]} \end{tiny}};
+	     		\node[draw=none,anchor=west] at (35mm,-70mm) {\includegraphics[scale=0.25]{images_fabian/http_https.jpeg} \begin{tiny} Quelle: {[4]} \end{tiny}};
+	     		\end{tikzpicture}};
+		    \end{tikzpicture}
+		 \end{frame}
+	    
+	     \begin{frame}
+	     	\frametitle{HTTP(s) und Zertifikate}
+	     	\begin{tikzpicture}[remember picture, overlay]
+	     	\node at (current page.north west){
+	     		\begin{tikzpicture}[overlay]
+	     		\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.55]{images_fabian/schichten_modell.jpg} \begin{tiny} Quelle: {[5]} \end{tiny}};
+	     		\pause
+	     		\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.55]{images_fabian/schichten_modell+ssl.jpg}};
+	     		\end{tikzpicture}};
+		     \end{tikzpicture}
 	     \end{frame}
+    
+	    \begin{frame}
+	    	\frametitle{HTTP(s) und Zertifikate}
+	    	\begin{tikzpicture}[remember picture, overlay]
+	    	\node at (current page.north west){
+	    		\begin{tikzpicture}[overlay]
+	    		\node[draw=none,anchor=west] at (28mm,-50mm) {\includegraphics[scale=0.4]{images_fabian/pki.png} \begin{tiny} Quelle: {[6]} \end{tiny}};
+	    		\end{tikzpicture}};
+		    \end{tikzpicture}
+		\end{frame}
+    
+	    \begin{frame}
+	    	\frametitle{HTTP(s) und Zertifikate}
+	    	\begin{tikzpicture}[remember picture, overlay]
+	    	\node at (current page.north west){
+	    		\begin{tikzpicture}[overlay]
+	    		\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.4]{images_fabian/dkb_cert.png}};
+	    		\end{tikzpicture}};
+		    \end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{HTTP(s) und Zertifikate}
+			\begin{tikzpicture}[remember picture, overlay]
+			\node at (current page.north west){
+				\begin{tikzpicture}[overlay]
+				\node[draw=none,anchor=west] at (22mm,-42mm) {\includegraphics[scale=0.35]{images_fabian/dkb_cert2.png}};
+				\node[draw=none,anchor=west] at (72mm,-65mm) {\includegraphics[scale=0.4]{images_fabian/dkb_cert3.png}};
+				\end{tikzpicture}};
+			\end{tikzpicture}
+	    \end{frame}
+	    
+	    \begin{frame}
+	    	\frametitle{HTTP(s) und Zertifikate}
+	    	\begin{tikzpicture}[remember picture, overlay]
+	    	\node at (current page.north west){
+	    		\begin{tikzpicture}[overlay]
+	    		\node[draw=none,anchor=west] at (25mm,-50mm) {\includegraphics[scale=0.4]{images_fabian/mitm_https.png} \begin{tiny} Quelle: {[7]}\end{tiny}};
+	    		\end{tikzpicture}};
+		    \end{tikzpicture}
+		\end{frame}
+    
+    \subsection*{Sicherheitslücken}
+	    \begin{frame}
+	    	\frametitle{Sicherheitslücke - Lenovo}
+		    \begin{tikzpicture}[remember picture, overlay]
+		    	\node at (current page.north west){
+		    		\begin{tikzpicture}[overlay]
+		    		\node[draw=none,anchor=west] at (25mm,-50mm) {\includegraphics[scale=0.3]{images_fabian/superfish_cert.jpg} \begin{tiny} Quelle: {[8]} \end{tiny}};
+		    		\end{tikzpicture}};
+		    \end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Sicherheitslücke - Lenovo}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (28mm,-52mm) {\includegraphics[scale=0.3]{images_fabian/superfish_cert2.jpg} \begin{tiny} Quelle: {[8]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Sesam öffne Dich}
+			\begin{tikzpicture}[remember picture, overlay]
+			\node at (current page.north west){
+				\begin{tikzpicture}[overlay]
+				\node[draw=none,anchor=west] at (23mm,-31mm) {\includegraphics[scale=0.5]{images_fabian/attack_cert.png}};
+				\node[draw=none,anchor=west] at (23mm,-53mm) {\begin{tiny} Quelle: {[9]} \end{tiny}};
+				\node[draw=none,anchor=west] at (55mm,-57mm) {\includegraphics[scale=0.35]{images_fabian/private_key.png} \begin{tiny} Quelle: {[9]} \end{tiny}};
+				\end{tikzpicture}};
+		\end{tikzpicture}
+	\end{frame}
+		
+		\begin{frame}
+			\frametitle{Sicherheitslücke - DELL}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (40mm,-50mm) {\includegraphics[scale=0.5]{images_fabian/eDELLRoot.png} \begin{tiny} Quelle: {[10]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Sicherheitslücke - DELL}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (28mm,-50mm) {\includegraphics[scale=0.45]{images_fabian/zertifikatsspeicher.png} \begin{tiny} Quelle: {[11]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Sicherheitslücke - DELL}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (28mm,-42mm) {\includegraphics[scale=0.45]{images_fabian/personal_speicher.png} \begin{tiny} Quelle: {[11]} \end{tiny}};
+					\node[draw=none,anchor=west] at (25mm,-80mm) {\includegraphics[scale=0.55]{images_fabian/dell-software.PNG}};
+					\node[draw=none,anchor=west] at (105mm,-85mm) {\begin{tiny} Quelle: {[11]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\subsection*{Schutz}
+		\begin{frame}
+			\frametitle{Schutz}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (25mm,-50mm) {\includegraphics[scale=0.3]{images_fabian/check_cert.png} \begin{tiny} Quelle: {[12]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Schutz}
+			\begin{tikzpicture}[remember picture, overlay]
+				\node at (current page.north west){
+					\begin{tikzpicture}[overlay]
+					\node[draw=none,anchor=west] at (25mm,-47mm) {\includegraphics[scale=0.4]{images_fabian/check_report.png}};
+					\node[draw=none,anchor=west] at (25mm,-80mm){\begin{tiny} Quelle: {[12]} \end{tiny}};
+					\end{tikzpicture}};
+			\end{tikzpicture}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Schutz}
+			Schutzmöglichkeiten:
+			\begin{itemize}
+				\item neuer Rechner ohne BS
+				\item Kontrolle Zertifikate 
+				\item inhaltliche Überprüfung Zertifikatsspeicher
+				\item inhaltliche Überprüfung aktueller Programmliste
+				\item auf aktuellem Stand bleiben 
+				\item[] $\rightarrow$ Verwendung fachspezifischer Foren, Newsletter oder Zeitschriften 
+				\item[] $\rightarrow$ Information über verwendete HW u. SW 
+			\end{itemize}
+		\end{frame}
     
     \section{Man-in-the-Middle-Angriffe im geswitchten Netzwerk}
     	
@@ -285,13 +446,29 @@
                        	
     	\end{frame}
 
-	\section{Literatur}
+	\section{Quellen}
+	
     	\begin{frame}
-    		\frametitle{Literatur}
-    		\addcontentsline{toc}{section}{Literatur}
-    		\begin{enumerate}
-    			\item http://hackerspace.kinja.com/how-to-defend-yourself-against-mitm-or-man-in-the-middl-1461796382
-    			\item http://blog.agupieware.com/2013_10_01_archive.html
-    		\end{enumerate}
+    		\frametitle{Quellen}
+    		%\addcontentsline{toc}{section}{Lite}
+    		\begin{tiny}
+	    		\begin{enumerate}
+		    		\item {http://hackerspace.kinja.com/how-to-defend-yourself-against-mitm-or-man-in-
+	    			the-middl-1461796382 (Abrufdatum: 26.07.2016)}
+	    			\item {http://blog.agupieware.com/2013\_10\_01\_archive.html (Abrufdatum: 26.07.2016)}
+	    			\item {https://kaazing.com/doc/xmpp/3.5/security/c\_sec
+	    				\_https\_wss.html} (Abrufdatum: 26.07.2016)
+		    		\item {http://www.vijaywebsolutions.com/Blog.aspx (Abrufdatum: 26.07.2016)}
+	    			\item {http://d.pcnews.at/ins/pcn/103/003000/main.htm (Abrufdatum: 26.07.2016)}
+	    			\item {http://slideplayer.org/slide/855695/ (Abrufdatum:26.07.2016)}
+	    			\item {http://thehackernews.com/2012/09/crime-new-ssltls-attack-for-hijacking.html \\(Abrufdatum: 26.07.2016)}
+	    			\item {http://marcrogers.org/2015/02/19/lenovo-installs-adware-on-customer-laptops-and-
+	    				compromises-all-ssl/ (Abrufdatum: 26.07.2016)}
+	    			\item {http://blog.erratasec.com/2015/02/extracting-superfish-certificate.html.V5k4mu22HfZ (Abrufdatum: 26.07.2016)}
+	    			\item {http://joenord.blogspot.de/2015/11/new-dell-computer-comes-with-edellroot.html (Abrufdatum: 26.07.2016)}
+	    			\item {http://www.dell.com/support/article/us/en/19/SLN300321 (Abrufdatum: 26.07.2016)}
+	    			\item {https://globalsign.ssllabs.com/ (Abrufdatum: 27.07.2016)}
+	    		\end{enumerate}
+    		\end{tiny}
     	\end{frame}    
 \end{document}
