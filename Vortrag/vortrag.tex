@@ -2,8 +2,13 @@
 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{url}
 \usepackage{hyperref}
 \usepackage{eurosym}
+\usepackage{bibgerm}
+\usepackage{bibentry}
+\usepackage{graphicx}
+\bibliographystyle{unsrt}
 
 \mode<presentation>{
 	\definecolor{LogoRed}{RGB}{219,00,31}
@@ -74,10 +79,32 @@
 	
 	\section{Man in the Middle im Web}
 	
-	\begin{frame}
-		\frametitle{Aufgabenstellung}
-	
-    \end{frame}
+		\begin{frame}
+			\frametitle{Aufgabenstellung}
+			Dell und Lenovo haben demonstriert, dass man mit Man-in-the-Middle
+			Angriffen die Sicherheit eines Systems sehr effizient aushebeln kann.
+			Wie funktioniert ein derartiger Angriff und was kann man tun, um sich
+			zu schützen.
+	    \end{frame}
+	     \subsection*{Einführung}
+	     \begin{frame}
+	     	\frametitle{Man in the Middle (MITM)}
+	     	\begin{minipage}[t]{0.8\linewidth}
+	     		%	\centering
+	     		\includegraphics[width=0.8\linewidth]{images_fabian/mitm.jpg}
+	     		\newline Quelle: [1]
+	     	\end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
+	     	\hfill
+	     	\begin{minipage}[t]{0.7\linewidth}
+	     	%	\centering
+	     		\includegraphics[width=0.8\linewidth]{images_fabian/mitm2.jpg}
+	     		\newline Quelle: [2]
+	     	\end{minipage}
+	     \end{frame}
+	     \begin{frame}
+	     	\frametitle{HTTP(s) und Zertifikate}
+	     	
+	     \end{frame}
     
     \section{Man-in-the-Middle-Angriffe im geswitchten Netzwerk}
     	
@@ -141,5 +168,14 @@
 		\begin{frame}
         	\frametitle{Schutzmaßnahmen}
                        	
-    	\end{frame}    
+    	\end{frame}  
+    	
+    \section{Literatur}
+    	\begin{frame}
+    		\frametitle{Literatur}
+    		\addcontentsline{toc}{section}{Literatur}
+    		\begin{enumerate}
+    			\item http://hackerspace.kinja.com/how-to-defend-yourself-against-mitm-or-man-in-the-middl-1461796382
+    		\end{enumerate}
+    	\end{frame}
 \end{document}
