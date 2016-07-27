@@ -115,33 +115,83 @@
         \subsection*{Einführung}
         \begin{frame}
         	\frametitle{Hub}
-            	
+            \begin{itemize}
+            \item stellt Verbindungskomponente in einem Netzwerk dar
+            \item arbeitet auf Schicht 1 des ISO-/OSI-Schichtenmodells
+            \item nicht zielorientiert
+            \item sendet Bits an alle Teilnehmer, die an Hub angeschlossen sind
+            \item wurde in Netzwerken hauptsächlich aus Kostengründen eingesetzt
+            \item wurde mittlerweile fast vollständig von Switches verdrängt, da diese mittlerweile günstig geworden sind 
+            \end{itemize}
         \end{frame}
         
         \begin{frame}
           	\frametitle{Switch}
-                  	
+            	\begin{itemize}
+            	\item arbeite auf Schicht 2 des ISO-/OSI-Schichtenmodell
+            	\item zwei Typen:
+            	\begin{itemize}
+            	\item einfacher Switch : leitet Pakete mit Hilfe von MAC-Adressen von Quelle zu Ziel weiter; verwendet dafür Switch-Tabelle
+            	\item Layer-3-Switch : zusätzlich zur oben genannten Funktion noch Überwachungsfunktionen möglich, z.B. IP-Filterung, Routing (Schicht 3)
+            	\end{itemize}
+            	\end{itemize}
+            	Einsatz eines Switchtes bringt wesentliche Vorteile zum Vorgänger Hub
+            	\begin{itemize}
+            		\item erhöhte Datensicherheit
+            		\item geringere Netzwerklast	
+            	\end{itemize}
         \end{frame}
         
         \begin{frame}
         	\frametitle{Funktion Switch-Tabelle}
-                       	
+        	Switch-Tabelle ermöglicht wesentlichen Punkt der Funktionsweise:
+        	\begin{itemize}
+        	\item Switch verfügt über Ein- und Ausgänge, sogenannte Ports
+        	\item können unabhängig voneinander empfangen und senden
+        	\item an Ein- und Ausgängen sind einzelne Netzwerkteilnehmer angeschlossen
+        	\item für jeden Port MAC-Adresse des Teilnehmers hinterlegt
+        	\end{itemize}  	
     	\end{frame}
+    	
+    	\begin{frame}
+	       	\frametitle{Funktion Switch-Tabelle}
+	       	Store-und-Forward-Prinzip
+	       	\begin{enumerate}
+	       	\item Switch empfängt gesamtes Frame, berechnet CRC, wenn CRC nicht stimmt, wird Frame verworfen
+	       	\item überprüfen, ob Quell-Adresse in Switch-Tabelle, wenn nicht, Eintrag zusammen mit Port in Switch-Tabelle
+	       	\item Ziel-Adresse mit Einträgen in Switch-Tabelle vergleichen, wenn vorhanden, wird an Teilnehmer mit passenden Port weitergeleitet, ansonsten Weiterleitung an alle Ports
+	       	\end{enumerate}  	
+	   	\end{frame}
     	
         \begin{frame}
         	\frametitle{Was ist ein geswitchtes Netzwerk}
-                       	
+        	\begin{itemize}
+        	\item Auslastung des Netzwerkes stark reduziert
+        	\item Frame nur noch an einen Teilnehmer, wenn dieser bekannt
+        	\item Switch kann Teilnehmer auch in Gruppen aufspalten und unterscheiden, an welche Gruppe Frame gesendet wird
+        	\item nahezu jeden Netzwerk verfügt heute über mindestens einen Switch
+        	\end{itemize} 	
     	\end{frame}
+    	
+    	\begin{frame}
+	       	\frametitle{Mehrere Switches in einem Netzwerk}
+	       	\begin{itemize}
+	       	\item natürlich möglich
+	       	\item kann man nicht einfach miteinander verbinden, da sonst eine Schleife gelegt wird, gesamter Netzwerkverkehr kommt zum Erliegen
+	       	\item Vorkehrungen treffen, spezielle Kabel
+	       	\end{itemize} 	
+	   	\end{frame}
+    	
     	\subsection*{Angriffsmöglichkeiten}
         \begin{frame}
         	\frametitle{Angriffsmöglichkeiten}
         	
         	\begin{itemize}
-        	\pause
+ 
         	\item MAC-Flooding
-        	\pause
+  
         	\item MAC-Spoofing
-        	\pause
+
         	\item ARP-Spoofing
         	\end{itemize}
                        	
@@ -149,16 +199,86 @@
     	
         \begin{frame}
         	\frametitle{MAC-Flooding}
+        	\begin{itemize}
+	       	\item Speicher in Switch-Tabelle ist begrenzt
+	       	\item Switch wird mit gefälschten MAC-Adressen überhäuft, bis Speicher in der Tabelle voll
+	       	\item wenn Tabelle voll, verhält sich Switch bei neuen Adressen wie Hub, weil diese unbekannt sind
+	       	\item einige Switches haben Schutzmaßnahmen dagegen, z.B. List mit zugelassenen Ports anlegen
+	       	\end{itemize} 
                        	
     	\end{frame}
 		\begin{frame}
         	\frametitle{MAC-Spoofing}
+        	\begin{itemize}
+        	\item Quell-Adresse mit Adresse des Angreifers ersetzen
+        	\item Antwort des Empfängers wird an Angreifer gesendet
+        	\item Angreifer wird dabei allerdings in Switch-Tabelle eingetragen
+        	\item Schutzmaßnahme: Liste mit erlaubten MAC-Adresse für jeweiligen Port
+        	\end{itemize}
                        	
     	\end{frame}
     	\begin{frame}
     		\frametitle{ARP-Spoofing}
-    	                       	
+    		Dieser Angriff macht sich Schwachstelle des ARP-Protokolls zunutze.\\
+    		Funktionsweise ARP:
+    		\begin{itemize}
+    		\item Auflösung IP zu Hardware-Adresse
+    		\item jeder Rechner hat ARP-Tabelle
+    		\item in ARP-Tabelle alle bekannten Teilnehmer des lokalen Netzwerkes hinterlegt
+    		\item damit Einträge nicht veralten, regelmäßig ARP-Request
+    		\end{itemize}  	
     	\end{frame}
+    	
+    	\begin{frame}
+    		\frametitle{ARP-Schwächen im Protokoll}
+    		\begin{itemize}
+    		\item jede ARP-Response wird ausgewertet, auch ohne ARP-Request
+    		\item Identität des Teilnehmers wird nicht überprüft
+    		\end{itemize}           	
+    	\end{frame}
+    	
+    	\begin{frame}
+	   		\frametitle{ARP-Beispiel}
+	   		Netzwerkteilnehmer
+	   		\begin{itemize}
+	   		\item Diana
+	   		\item Fabian
+	   		\item X
+	   		\item Y Angreifer
+	   		\end{itemize}           	
+	   	\end{frame}
+	   	
+	   	\begin{frame}
+	   		\frametitle{ARP-Beispiel}
+	   		APR-Tabellen-Einträge mit entsprechenden Werkzeugen manipulieren, sodass in bei den Netzwerkteilnehmern falsche Angaben hinterlegt sind
+	   			\vfill
+			   	\begin{tabular}{l c l}
+			   		ARP-Tabelle von Fabian & & \\
+			   		\hline
+			   		IP-Adresse Diana & : & MAC-Adresse von Y \\
+			   		IP-Adresse X & : & MAC-Adresse von X \\
+			   		IP-Adresse Y & : & MAC-Adresse von Y \\
+			   	\end{tabular}
+			   	\vfill
+			   	\begin{tabular}{l c l}
+			   		ARP-Tabelle von Diana & & \\
+			   		\hline
+			   		IP-Adresse Fabian & : & MAC-Adresse von Y \\
+			   		IP-Adresse X & : & MAC-Adresse von X \\
+			   		IP-Adresse Y & : & MAC-Adresse von Y \\
+			   	\end{tabular}         	
+	   	\end{frame}
+	   	
+	   	\begin{frame}
+	   		\frametitle{ARP-Beispiel}
+	   		\includegraphics[height=5.0cm]{ARP-Tabelle-manipuliert.png}
+	   	\end{frame}
+	   	
+	   	\begin{frame}
+	   		\frametitle{ARP-Beispiel}
+	   		\includegraphics[height=5.0cm]{ARP-Tabelle-manipuliert_1.png}
+	   	\end{frame}
+    	
     	\subsection*{Werkzeuge}
 		\begin{frame}
         	\frametitle{Werkzeuge}
