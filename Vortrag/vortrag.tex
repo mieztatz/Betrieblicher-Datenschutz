@@ -114,10 +114,15 @@
 	     	\node at (current page.north west){
 	     		\begin{tikzpicture}[overlay]
 	     		\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.55]{images_fabian/schichten_modell.jpg} \begin{tiny} Quelle: {[5]} \end{tiny}};
-	     		\pause
-	     		\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.55]{images_fabian/schichten_modell+ssl.jpg}};
 	     		\end{tikzpicture}};
 		     \end{tikzpicture}
+		     	\pause
+		     \begin{tikzpicture}[remember picture, overlay]
+		     \node at (current page.north west){
+		     	\begin{tikzpicture}[overlay]
+		     	\node[draw=none,anchor=west] at (30mm,-50mm) {\includegraphics[scale=0.55]{images_fabian/schichten_modell+ssl.jpg}};
+		     	\end{tikzpicture}};
+		    \end{tikzpicture}
 	     \end{frame}
     
 	    \begin{frame}
