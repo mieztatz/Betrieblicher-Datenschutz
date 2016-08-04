@@ -1,5 +1,6 @@
-\beamer@endinputifotherversion {3.24pt}
+\beamer@endinputifotherversion {3.36pt}
 \select@language {ngerman}
 \beamer@sectionintoc {1}{Begr\IeC {\"u}\IeC {\ss }ung}{2}{0}{1}
 \beamer@sectionintoc {2}{Man in the Middle im Web}{4}{0}{2}
-\beamer@sectionintoc {3}{Man-in-the-Middle-Angriffe im geswitchten Netzwerk}{5}{0}{3}
+\beamer@sectionintoc {3}{Man-in-the-Middle-Angriffe im geswitchten Netzwerk}{22}{0}{3}
+\beamer@sectionintoc {4}{Quellen}{41}{0}{4}

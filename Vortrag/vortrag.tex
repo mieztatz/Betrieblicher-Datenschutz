@@ -305,6 +305,7 @@
         
         \begin{frame}
         	\frametitle{Funktion Switch-Tabelle}
+        	\includegraphics[height=3.0cm]{switch-tabelle.png}\\
         	Switch-Tabelle ermöglicht wesentlichen Punkt der Funktionsweise:
         	\begin{itemize}
         	\item Switch verfügt über Ein- und Ausgänge, sogenannte Ports
@@ -326,6 +327,7 @@
     	
         \begin{frame}
         	\frametitle{Was ist ein geswitchtes Netzwerk}
+        	\includegraphics[height=3.0cm]{geswitchtes_netz.png}\\
         	\begin{itemize}
         	\item Auslastung des Netzwerkes stark reduziert
         	\item Frame nur noch an einen Teilnehmer, wenn dieser bekannt
@@ -399,7 +401,7 @@
     	\end{frame}
     	
     	\begin{frame}
-	   		\frametitle{ARP-Beispiel}
+	   		\frametitle{ARP-Spoofing Beispiel}
 	   		Netzwerkteilnehmer
 	   		\begin{itemize}
 	   		\item Diana
@@ -410,7 +412,7 @@
 	   	\end{frame}
 	   	
 	   	\begin{frame}
-	   		\frametitle{ARP-Beispiel}
+	   		\frametitle{ARP-Spoofing Beispiel}
 	   		APR-Tabellen-Einträge mit entsprechenden Werkzeugen manipulieren, sodass in bei den Netzwerkteilnehmern falsche Angaben hinterlegt sind
 	   			\vfill
 			   	\begin{tabular}{l c l}
@@ -431,23 +433,51 @@
 	   	\end{frame}
 	   	
 	   	\begin{frame}
-	   		\frametitle{ARP-Beispiel}
+	   		\frametitle{ARP-Spoofing Beispiel}
 	   		\includegraphics[height=5.0cm]{ARP-Tabelle-manipuliert.png}
 	   	\end{frame}
 	   	
 	   	\begin{frame}
-	   		\frametitle{ARP-Beispiel}
+	   		\frametitle{ARP-Spoofing Beispiel}
 	   		\includegraphics[height=5.0cm]{ARP-Tabelle-manipuliert_1.png}
 	   	\end{frame}
     	
     	\subsection*{Werkzeuge}
 		\begin{frame}
         	\frametitle{Werkzeuge}
-                       	
+        	mehrere Werkzeuge, die sich dafür eignen:
+        	\begin{itemize}
+        	\item Ettercap NG : umfangreiche Sammlung von Tools
+        	\item Arp-sk : Erzeugen einfacher ARP-Nachrichten
+        	\item ARP0c : Spoofing-Tool, händlet selbst den Versand von ARP-Nachrichten
+        	\item Dsniff : Sammlung von Tools
+        	\end{itemize}    	
+    	\end{frame}
+    	
+    	\begin{frame}
+	    	\frametitle{Dsniff}
+	    	\begin{itemize}
+        	\item Passwort-Sniffer dsniff : filtert unverschlüsselte Passwörter im Netzwerk
+        	\item arpspoof : leitet Pakete vom Zielhost, welchen in einem Netzwerk zu einem anderen Host gesendet werden sollen, um, indem die ARP-Antworten (ARP-Replies) vom Angreifer gefälscht werden.
+        	\item weitere spezielle Sniffer wie z.B. urlsniff und mailsniff
+        	\end{itemize}
     	\end{frame}
     	\subsection*{Maßnahmen}
 		\begin{frame}
         	\frametitle{Schutzmaßnahmen}
+        	\begin{itemize}
+        	\item einzig sichere Maßnahme ist manuelle Verwaltung von Ip- und zugehörigen MAC-Adressen; im privaten Netzwerk zu Hause gut umsetzbar
+        	\item bringt allerdings einen hohen Arbeitsaufwand mit sich, wenn viele Netzwerkteilnehmer
+        	\item in Netzwerk mit vielen wechselnden Geräten nicht umsetzbar
+        	\item weitere Maßnahme wäre Überwachung des Netzwerkes, um eine erhöhte Anzahl an ARP-Nachrichten aufzudecken
+        	\item Arpwatch ist Programm, dass ARP-Nachrichten im Netzwerk überprüft
+        	\begin{itemize}
+        	\item alle bekannten Adressen in arp.dat hinterlegt
+        	\item taucht eine nicht bekannte Adresse auf, wird Nachricht in syslog hinterlegt
+        	\item hat sich Zuordnung von MAC- zu IP-Adresse geändert, ebenfalls Eintrag in syslog
+        	\item Administrator hat so Überblick über eventuelle Angreifer; kann unbekannte Netzwerkteilnehmer verwalten
+        	\end{itemize}
+        	\end{itemize}
                        	
     	\end{frame}
 
